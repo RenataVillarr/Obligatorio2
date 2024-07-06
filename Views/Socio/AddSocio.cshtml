@@ -1,0 +1,55 @@
+﻿@model Socio
+@{
+    ViewData["Title"] = "Agregar Socio";
+}
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 40px">Agregar Socio</h1>
+    <form asp-action="AddSocio" controller="Socio" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label for="idSocio">Id Socio:</label>
+            <input type="text" asp-for="IdSocio" class="form-control" />
+            <span asp-validation-for="IdSocio" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" asp-for="Nombre" class="form-control" id="nombre" />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="tipo">Tipo:</label>
+            <select asp-for="Tipo" class="form-control" id="tipo">
+                <option value="estandar">Estándar</option>
+                <option value="premium">Premium</option>
+            </select>
+            <span asp-validation-for="Tipo" class="text-danger"></span>
+        </div>
+         <div class="form-group">
+            <label for="telefono">Telefono:</label>
+            <input type="text" asp-for="Telefono" class="form-control" id="telefono" />
+            <span asp-validation-for="Telefono" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="mail">Mail:</label>
+            <input type="text" asp-for="Mail" class="form-control" id="mail" />
+            <span asp-validation-for="Mail" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="idLocal">Id Local:</label>
+            <select asp-for="IdLocal" asp-items="Model.LocalesPosibles" class="form-control">
+                <option value="@null">Seleccione un local</option>
+            </select>
+            <span asp-validation-for="IdLocal" class="text-danger"></span>
+        </div>
+
+        <h1 class="display-4" style="font-size:100%;font-weight:bold;margin:10px auto;color:red">@ViewBag.ErrorMessage</h1>
+
+        <button type="submit" class="btn btn-primary">Agregar Socio</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

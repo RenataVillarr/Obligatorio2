@@ -1,0 +1,54 @@
+﻿@model List<Socio>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 40px">Lista de Socios</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Telefono</th>
+                <th>Mail</th>
+                <th>Local</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var socios in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => socios.IdSocio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => socios.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => socios.Tipo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => socios.Telefono)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => socios.Mail)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => socios.IdLocal)
+                    </td>
+                    <td>
+                        <a asp-action="UpdateSocio" asp-route-id="@socios.IdSocio" class="btn btn-sm btn-primary">Modificar</a>
+                        <form asp-action="DeleteSocio" method="post" style="display:inline;">
+                            <input type="hidden" name="IdSocio" value="@socios.IdSocio" />
+                            <input type="submit" value="Eliminar" class="btn btn-sm btn-danger" />
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

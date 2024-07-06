@@ -1,0 +1,42 @@
+﻿@model List<RutinaEjercicio>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 40px">Lista de rutinas ejercicios</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id de rutina</th>
+                <th>Id de ejercicio</th>
+                <th>Cantidad</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var rutinaejercicios in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => rutinaejercicios.IdRutina)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => rutinaejercicios.IdEjercicio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => rutinaejercicios.Cantidad)
+                    </td>
+                    <td>
+                        <form controller="RutinaEjercicio" method="post">
+                            <input type="hidden" name="idRutina" asp-for="@rutinaejercicios.IdRutina" />
+                            <input type="hidden" name="idEjercicio" asp-for="@rutinaejercicios.IdEjercicio" />
+                            <input type="submit" value="Eliminar" asp-action="DeleteRutinaEjercicio" class="btn btn-sm btn-danger" />
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

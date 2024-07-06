@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Obligatorio2</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Obligatorio2.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Obligatorio2</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <select class="nav-link text-dark" style="border: none;" onchange="location = this.value;">
+                                <option value="">Local</option>
+                                <option value="@Url.Action("AddLocal", "Local")">Agregar local</option>
+                                <option value="@Url.Action("ListLocal", "Local")">Lista locales</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <select class="nav-link text-dark" style="border: none;" onchange="location = this.value;">
+                                <option value="">Socio</option>
+                                <option value="@Url.Action("AddSocio", "Socio")">Agregar socio</option>
+                                <option value="@Url.Action("ListSocio", "Socio")">Lista socios</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <select class="nav-link text-dark" style="border: none;" onchange="location = this.value;">
+                                <option value="">Tipo de máquina</option>
+                                <option value="@Url.Action("AddTipoMaq", "TipoMaquina")">Agregar tipo de máquina</option>
+                                <option value="@Url.Action("ListTipoMaq", "TipoMaquina")">Lista tipo de máquinas</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <select class="nav-link text-dark" style="border: none;" onchange="location = this.value;">
+                                <option value="">Máquina</option>
+                                <option value="@Url.Action("AddMaquina", "Maquina")">Agregar máquina</option>
+                                <option value="@Url.Action("ListMaquina", "Maquina")">Lista máquinas</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <select class="nav-link text-dark" style="border: none;" onchange="location = this.value;">
+                                <option value="">Ejercicio</option>
+                                <option value="@Url.Action("AddEjercicio", "Ejercicio")">Agregar ejercicio</option>
+                                <option value="@Url.Action("ListEjercicio", "Ejercicio")">Lista ejercicios</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <select class="nav-link text-dark" style="border: none;" onchange="location = this.value;">
+                                <option value="">Rutina</option>
+                                <option value="@Url.Action("AddRutina", "Rutina")">Agregar rutina</option>
+                                <option value="@Url.Action("ListRutina", "Rutina")">Lista rutinas</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <select class="nav-link text-dark" style="border: none;" onchange="location = this.value;">
+                                <option value="">Socio Rutina</option>
+                                <option value="@Url.Action("AddSocioRutina", "SocioRutina")">Agregar socio rutina</option>
+                                <option value="@Url.Action("ListSocioRutina", "SocioRutina")">Lista socios rutinas</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <select class="nav-link text-dark" style="border: none;" onchange="location = this.value;">
+                                <option value="">Rutina Ejercicio</option>
+                                <option value="@Url.Action("AddRutinaEjercicio", "RutinaEjercicio")">Agregar rutina ejercicio</option>
+                                <option value="@Url.Action("ListRutinaEjercicio", "RutinaEjercicio")">Lista rutinas ejercicios</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <select class="nav-link text-dark" style="border: none;" onchange="location = this.value;">
+                                <option value="">Filtros</option>
+                                <option value="@Url.Action("SociosSinRutinasXTipoMaquina", "Filtros")">Socios sin Rutinas por Tipo de Máquina</option>
+                            </select>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Obligatorio2 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

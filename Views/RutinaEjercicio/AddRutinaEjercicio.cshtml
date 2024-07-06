@@ -1,0 +1,40 @@
+﻿@model RutinaEjercicio
+@{
+    ViewData["Title"] = "Agregar Rutina Ejercicio";
+}
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 40px">Agregar Rutina Ejercicio</h1>
+    <form asp-action="AddRutinaEjercicio" controller="RutinaEjercicio" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label for="idRutina">Id Rutina:</label>
+            <select asp-for="IdRutina" asp-items="Model.RutinasPosibles" class="form-control">
+                <option value="@null">Seleccione una rutina</option>
+            </select>
+            <span asp-validation-for="IdRutina" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="idEjercicio">Id Ejercicio:</label>
+            <select asp-for="IdEjercicio" asp-items="Model.EjerciciosPosibles" class="form-control">
+                <option value="@null">Seleccione un ejercicio</option>
+            </select>
+            <span asp-validation-for="IdEjercicio" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" asp-for="Cantidad" class="form-control" id="cantidad" />
+            <span asp-validation-for="Cantidad" class="text-danger"></span>
+        </div>
+
+        <h1 class="display-4" style="font-size:100%;font-weight:bold;margin:10px auto;color:red">@ViewBag.ErrorMessage</h1>
+
+        <button type="submit" class="btn btn-primary">Agregar Rutina Ejercicio</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

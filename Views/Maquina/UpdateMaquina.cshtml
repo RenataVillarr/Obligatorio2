@@ -1,0 +1,68 @@
+﻿@model Maquina
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 40px">Modificar Máquina</h1>
+    <form asp-action="UpdateMaquina" controller="Maquina" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label for="idMaq">Id Máquina:</label>
+            <input readonly type="text" asp-for="IdMaq" class="form-control" id="idMaq" name="idMaq">
+            <span asp-validation-for="IdMaq" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="idLocal">IdLocal:</label>
+            <select asp-for="IdLocal" asp-items="Model.LocalesPosibles" class="form-control">
+                <option value="">Seleccione uno de los locales</option>
+            </select>
+            <span asp-validation-for="IdLocal" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="fechaCompra">Fecha de compra:</label>
+            <input type="date" asp-for="FechaCompra" class="form-control" id="fechaCompra">
+            <span asp-validation-for="FechaCompra" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="precioCompra">Precio de compra:</label>
+            <input type="number" asp-for="PrecioCompra" class="form-control" id="precioCompra">
+            <span asp-validation-for="PrecioCompra" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="vidaUtil">Vida util:</label>
+            <input type="number" asp-for="VidaUtil" class="form-control" id="vidaUtil">
+            <span asp-validation-for="VidaUtil" class="text-danger"></span>
+
+        </div>
+
+        <div class="form-group">
+            <label for="idTipoMaq">IdTipoMaq:</label>
+            <select asp-for="IdTipoMaq" asp-items="Model.TipoMaqsPosibles" class="form-control">
+                <option value="">Seleccione un tipo de máquina</option>
+            </select>
+            <span asp-validation-for="IdTipoMaq" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="disponible">Disponible:</label>
+            <input type="text" asp-for="Disponible" class="form-control" id="disponible">
+            <span asp-validation-for="Disponible" class="text-danger"></span>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Modificar máquina</button>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

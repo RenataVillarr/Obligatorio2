@@ -1,0 +1,61 @@
+﻿@model Socio
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 40px">Modificar Socio</h1>
+    <form asp-action="UpdateSocio" controller="Socio" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label for="idSocio">IdSocio:</label>
+            <input readonly type="text" asp-for="IdSocio" class="form-control" id="idSocio" name="idSocio">
+            <span asp-validation-for="IdSocio" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" asp-for="Nombre" class="form-control" id="nombre">
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="tipo">Tipo:</label>
+            <input type="text" asp-for="Tipo" class="form-control" id="tipo">
+            <span asp-validation-for="Tipo" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="telefono">Telefono:</label>
+            <input type="text" asp-for="Telefono" class="form-control" id="telefono">
+            <span asp-validation-for="Telefono" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="mail">Mail:</label>
+            <input type="text" asp-for="Mail" class="form-control" id="mail">
+            <span asp-validation-for="Mail" class="text-danger"></span>
+
+        </div>
+
+        <div class="form-group">
+            <label for="idLocal">IdLocal:</label>
+            <select asp-for="IdLocal" asp-items="Model.LocalesPosibles" class="form-control">
+                <option value="">Seleccione uno de los locales</option>
+            </select>
+            <span asp-validation-for="IdLocal" class="text-danger"></span>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Modificar Socio</button>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

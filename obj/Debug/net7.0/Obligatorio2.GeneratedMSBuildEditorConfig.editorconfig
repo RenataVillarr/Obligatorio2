@@ -1,0 +1,137 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Obligatorio2
+build_property.RootNamespace = Obligatorio2
+build_property.ProjectDir = C:\Users\Pc\Desktop\Obl2programacion3VillarZetune\Obl2programacion3\Obligatorio2\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Pc\Desktop\Obl2programacion3VillarZetune\Obl2programacion3\Obligatorio2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Ejercicio/AddEjercicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWplcmNpY2lvXEFkZEVqZXJjaWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Ejercicio/ListEjercicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWplcmNpY2lvXExpc3RFamVyY2ljaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Ejercicio/UpdateEjercicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWplcmNpY2lvXFVwZGF0ZUVqZXJjaWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Filtros/SociosSinRutinasXTipoMaquina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsdHJvc1xTb2Npb3NTaW5SdXRpbmFzWFRpcG9NYXF1aW5hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Local/AddLocal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxcQWRkTG9jYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Local/ListLocal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxcTGlzdExvY2FsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Local/UpdateLocal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWxcVXBkYXRlTG9jYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Maquina/AddMaquina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFxdWluYVxBZGRNYXF1aW5hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Maquina/ListMaquina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFxdWluYVxMaXN0TWFxdWluYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Maquina/UpdateMaquina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFxdWluYVxVcGRhdGVNYXF1aW5hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/RutinaEjercicio/AddRutinaEjercicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUnV0aW5hRWplcmNpY2lvXEFkZFJ1dGluYUVqZXJjaWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/RutinaEjercicio/ListRutinaEjercicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUnV0aW5hRWplcmNpY2lvXExpc3RSdXRpbmFFamVyY2ljaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Rutina/AddRutina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUnV0aW5hXEFkZFJ1dGluYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Rutina/ListRutina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUnV0aW5hXExpc3RSdXRpbmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Rutina/UpdateRutina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUnV0aW5hXFVwZGF0ZVJ1dGluYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/SocioRutina/AddSocioRutina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaW9SdXRpbmFcQWRkU29jaW9SdXRpbmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/SocioRutina/ListSocioRutina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaW9SdXRpbmFcTGlzdFNvY2lvUnV0aW5hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Socio/AddSocio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaW9cQWRkU29jaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Socio/ListSocio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaW9cTGlzdFNvY2lvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Socio/UpdateSocio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaW9cVXBkYXRlU29jaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/TipoMaquina/AddTipoMaq.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb01hcXVpbmFcQWRkVGlwb01hcS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/TipoMaquina/ListTipoMaq.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb01hcXVpbmFcTGlzdFRpcG9NYXEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/TipoMaquina/UpdateTipoMaq.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb01hcXVpbmFcVXBkYXRlVGlwb01hcS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Desktop/Obl2programacion3VillarZetune/Obl2programacion3/Obligatorio2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ib9qoncdfx

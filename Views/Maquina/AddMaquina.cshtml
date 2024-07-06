@@ -1,0 +1,58 @@
+﻿@model Maquina
+@{
+    ViewData["Title"] = "Agregar Maquina";
+}
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 40px">Agregar Maquina</h1>
+    <form asp-action="AddMaquina" controller="Maquina" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label for="idMaq">Id maquina:</label>
+            <input type="text" asp-for="IdMaq" class="form-control" />
+            <span asp-validation-for="IdMaq" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="idLocal">Id Local:</label>
+            <select asp-for="IdLocal" asp-items="Model.LocalesPosibles" class="form-control">
+                <option value="@null">Seleccione un local</option>
+            </select>
+            <span asp-validation-for="IdLocal" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="fechaCompra">Fecha Compra:</label>
+            <input type="date" asp-for="FechaCompra" class="form-control">
+            <span asp-validation-for="FechaCompra" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="precioCompra">Precio de compra:</label>
+            <input type="number" asp-for="PrecioCompra" class="form-control" id="precioCompra" />
+            <span asp-validation-for="PrecioCompra" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="vidaUtil">Vida Util:</label>
+            <input type="number" asp-for="VidaUtil" class="form-control" id="vidaUtil" />
+            <span asp-validation-for="VidaUtil" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="idTipoMaq">Id Tipo máquina:</label>
+            <select asp-for="IdTipoMaq" asp-items="Model.TipoMaqsPosibles" class="form-control">
+                <option value="@null">Seleccione un tipo de máquina</option>
+            </select>
+            <span asp-validation-for="IdTipoMaq" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="disponible">Disponible:</label>
+            <input type="text" asp-for="Disponible" class="form-control" id="disponible" />
+            <span asp-validation-for="Disponible" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Agregar Máquina</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

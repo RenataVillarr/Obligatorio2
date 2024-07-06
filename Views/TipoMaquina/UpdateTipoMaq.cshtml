@@ -1,0 +1,30 @@
+﻿@model TipoMaquina
+
+@{
+    ViewData["Title"] = "Modificar tipo de máquina";
+}
+
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 40px">Modificar tipo de máquina</h1>
+    <form asp-action="UpdateTipoMaq" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label for="idTipoMaq">Id Tipo de Máquina:</label>
+            <input readonly type="text" asp-for="IdTipoMaq" class="form-control" id="idTipoMaq" name="IdTipoMaq">
+            <span asp-validation-for="IdTipoMaq" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" asp-for="Nombre" class="form-control" id="nombre">
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Modificar tipo de máquina</button>
+    </form>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

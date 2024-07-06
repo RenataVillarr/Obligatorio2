@@ -1,0 +1,65 @@
+﻿@model Local
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 40px">Modificar Local</h1>
+    <form asp-action="UpdateLocal" controller="Local" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label for="idLocal">IdLocal:</label>
+            <input readonly type="text" asp-for="IdLocal" class="form-control" id="idLocal" name="idLocal">
+            <span asp-validation-for="IdLocal" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" asp-for="Nombre" class="form-control" id="nombre">
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" asp-for="Ciudad" class="form-control" id="ciudad">
+            <span asp-validation-for="Ciudad" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="direccion">Direccion:</label>
+            <input type="text" asp-for="Direccion" class="form-control" id="direccion">
+            <span asp-validation-for="Direccion" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="telefono">Telefono:</label>
+            <input type="text" asp-for="Telefono" class="form-control" id="telefono">
+            <span asp-validation-for="Telefono" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="nomRespon">Nombre responsable:</label>
+            <input type="text" asp-for="NomRespon" class="form-control" id="nomRespon">
+            <span asp-validation-for="NomRespon" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="teleRespon">Telefono responsable:</label>
+            <input type="text" asp-for="TeleRespon" class="form-control" id="teleRespon">
+            <span asp-validation-for="TeleRespon" class="text-danger"></span>
+
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary">Modificar Local</button>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

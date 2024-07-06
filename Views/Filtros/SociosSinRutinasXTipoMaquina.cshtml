@@ -1,0 +1,52 @@
+﻿@model List<Socio>
+@{
+    ViewData["Title"] = "Filtrar socios sin rutina por tipo de máquina";
+}
+
+<h1>Filtrar socios sin rutina por tipo de máquina</h1>
+
+<form asp-action="SociosSinRutinasXTipoMaquina" method="post">
+    <div class="form-group">
+        <label for="tipoMaquina">Tipo de Máquina:</label>
+        <input type="text" name="tipoMaquina" class="form-control" id="tipoMaquina" />
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
+
+@if (ViewBag.Socios != null)
+{
+    <h2>Socios que no han hecho rutinas con ejercicios de tipo: @ViewBag.TipoMaquina</h2>
+    @if (Model == null || !Model.Any())
+    {
+        <p>Por ahora no hay socios que cumplan con el criterio.</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                    <th>Local</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var socio in ViewBag.Socios)
+                {
+                    <tr>
+                        <td>@socio.IdSocio</td>
+                        <td>@socio.Nombre</td>
+                        <td>@socio.Tipo</td>
+                        <td>@socio.Telefono</td>
+                        <td>@socio.Mail</td>
+                        <td>@socio.Local.Nombre</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+

@@ -1,0 +1,58 @@
+﻿@model List<Maquina>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 40px">Lista de Maquinas</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Local</th>
+                <th>Fecha de compra</th>
+                <th>Precio de compra</th>
+                <th>Vida util</th>
+                <th>Tipo de máquina</th>
+                <th>Disponible</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var maquinas in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => maquinas.IdMaq)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => maquinas.IdLocal)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => maquinas.FechaCompra)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => maquinas.PrecioCompra)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => maquinas.VidaUtil)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => maquinas.IdTipoMaq)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => maquinas.Disponible)
+                    </td>
+                    <td>
+                        <form controller="Maquina" method="post">
+                            <input type="hidden" name="idMaq" asp-for="@maquinas.IdMaq" />
+                            <a asp-action="UpdateMaquina" class="btn btn-sm btn-danger" asp-route-id="@maquinas.IdMaq">Modificar</a>
+                            <input type="submit" value="Eliminar" asp-action="DeleteMaquina" class="btn btn-sm btn-primary" />
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

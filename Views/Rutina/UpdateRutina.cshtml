@@ -1,0 +1,44 @@
+﻿@model Rutina
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <h1 class="display-4" style="font-size: 40px">Modificar Rutina</h1>
+    <form asp-action="UpdateRutina" controller="Rutina" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label for="idRutina">Id Rutina:</label>
+            <input readonly type="text" asp-for="IdRutina" class="form-control" id="idRutina" name="idRutina">
+            <span asp-validation-for="IdRutina" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripción:</label>
+            <input type="text" asp-for="Descripcion" class="form-control" id="descripcion">
+            <span asp-validation-for="Descripcion" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="tipoRutina">Tipo:</label>
+            <input type="text" asp-for="TipoRutina" class="form-control" id="tipoRutina">
+            <span asp-validation-for="TipoRutina" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="califRutinaPromedio">Promedio calificación:</label>
+            <input readonly type="text" asp-for="CalifRutinaPromedio" class="form-control" id="califRutinaPromedio" name="califRutinaPromedio">
+            <span asp-validation-for="CalifRutinaPromedio" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Modificar rutina</button>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
